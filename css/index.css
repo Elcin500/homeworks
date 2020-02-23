@@ -1,0 +1,68 @@
+card {
+    border: 1px solid gray;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+}
+
+.cion-container {
+    position: relative;
+    height: 100px;
+    padding-top: 15%    ;
+}
+
+.card>.cion-container>.icon {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    border-radius: 50%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.card>.cion-container>.icon::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(26, 4, 4);
+    position: absolute;
+    left: 12%;
+    top: 16%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    background-color: green;
+
+}
+.card>.cion-container>.icon::after {
+    content: '';
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(26, 4, 4);
+    position: absolute;
+    left: 85%;
+    top: 84%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+background-color: yellow;
+}
+.card>.cion-container>.icon:hover::before{
+   left:50%;
+    top: 50%;
+}
+
+.card>.cion-container>.icon:hover::after{
+    
+    left: 12%;
+    top: 16%;
+    
+
+}
+
+
+

@@ -1,0 +1,231 @@
+body {}
+
+div.navbar {
+    height: 660px;
+    width: 290px;
+    padding-top: 120px;
+    position: fixed;
+    line-height: 3;
+
+    background-image: url(https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/03/left-menu-background.jpg);
+    background-color: black;
+    opacity: 1;
+    left: 0;
+    top: 0;
+   
+
+}
+
+div.navbar>ul.left-list :hover {
+
+    color: tomato;
+    transition: 0.5s;
+
+}
+
+.left-list {
+
+    list-style-type: none;
+    margin: 0;
+
+
+
+}
+
+.logo {
+    height: 80px;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+.logoimg {
+
+    max-height: 100%;
+}
+
+div.context {
+    height: 700px;
+    margin-left: 283px;
+}
+
+
+
+.plus-icon {
+    display: inline-block;
+    color: antiquewhite;
+    float: right;
+    padding-right: 10px;
+}
+
+
+ul.left-list>li>a {
+    color: rgb(255, 255, 255);
+
+}
+
+.lefti>i {
+    float: left;
+    padding: 14px;
+}
+
+.adds-f {
+    height: 59px;
+
+}
+
+.adds {
+    display: inline-block;
+    color: azure;
+
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.adds>.addsli>a {
+    color: white;
+}
+
+.addsli>a>i {
+    padding: 4px;
+}
+
+.adds>.addsli>a>i:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.context{
+    left: 0;
+}
+
+.rightdiv {
+    display: inline-block;
+    height: 316.500px;
+    width: 317px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    position:relative;
+    
+   
+}
+
+.rightdiv::before {
+    content: " ";
+    display: table;
+}
+
+
+.context>ul.rightul {
+    list-style-type: none;
+
+}
+
+
+.context>ul.rightul>li {
+    display: inline-block;
+}
+
+.armchair {
+    display: inline-block;
+
+}
+
+.armchair>a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.armchair>a>span {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+
+}
+
+.button>a {
+    font-size: 12px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #707070;
+    list-style-type: none;
+    background-color: #f6f5f5;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 2px;
+    list-style-type: none;
+    letter-spacing: 0px;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    float: right;
+    margin-left: 30px;
+}
+
+.pul {
+    color: red;
+}
+
+.orange:hover {
+    color: red;
+    transition: 0.4s;
+
+}
+
+
+
+
+}
+
+.rightdiv:hover {
+    background-color: #707070;
+    opacity: 0.3;
+   
+
+
+}
+
+
+
+
+   .iconplus{
+
+   }
+.iconnew{
+    
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s  ease;
+    background-color:rgb(255, 255, 255);
+   
+}
+.rightdiv:hover .iconnew{
+    opacity: 0.4;
+
+}
+.linkoficon{
+    color: rgb(252, 0, 0);
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image{
+    display: block;
+}

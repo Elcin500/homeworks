@@ -1,0 +1,241 @@
+body {
+    display: inline;
+}
+
+.main {
+    height: 500vh;
+
+}
+
+.esas {
+
+    background-image: url(https://lad-fc.com/img/header-bg-old.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbartop {
+    background-color: #212529;
+    width: 1317px;
+    height: 52.656px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 16px;
+    padding-left: 16px;
+     position: fixed;
+
+    display: inline-block;
+    left: 0;
+    top: 0;
+
+}
+
+.navbarchild {
+    width: 1100px;
+    height: 52.656px;
+    margin-left: 88.500px;
+    margin-right: 88.500px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbarchild>a {
+    width: 181.984px;
+    height: 42px;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #fed136;
+    font-size: 2.75em;
+    font-family: 'Tangerine', serif;
+    cursor: pointer;
+}
+
+.ul {
+    position: absolute;
+    list-style-type: none;
+    bottom: 14px;
+
+
+}
+
+.ul ul {
+    margin-left: 35pc;
+}
+
+.ul>ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+
+.realli>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    float: right;
+}
+
+.realli>a:hover {
+    color: yellow;
+    transition: 0.3s;
+
+}
+
+.background {
+    display: inline-block;
+    width: 100%;
+    height: 834px;
+    position: relative;
+
+
+}
+
+.centerwords {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+}
+
+
+.centerwords>a {
+    background-color: #fed136;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 35px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    border-color: #fed136;
+    width: 175px;
+
+
+}
+
+.services {
+    text-align: center;
+}
+
+.services>h3 {
+    color: rgb(124, 121, 121);
+    font-style: italic;
+}
+
+.services div {
+    display: inline-block;
+    height: 398px;
+    width: 210px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.services div .lorem {
+    width: 210px;
+    height: 168px;
+}
+
+.icon {
+    display: inline-block;
+    background-color: #ffd94e;
+    border: 1px solid;
+    border-color: #f5d668;
+    border-radius: 50%;
+    width: 139px;
+    height: 128px;
+}
+
+.icon::before {
+    display: inline-block;
+
+}
+
+.icon i::before {
+    font-size: 100px;
+}
+.lorem>p{
+    color: rgb(92, 92, 92);
+}
+.portfolio{
+    height: 500px;
+}   
+.portfoliohead{
+    height: 100px;
+    text-align: center;
+}
+
+.portfoliochild{
+    display: inline-block   ;
+    height: 263.500px;
+    width: 210px;
+}
+.img>a>img{
+    width: 210px;
+    height: 157.5px;
+}
+ .img{
+    position: relative;
+    height: 162px;
+} 
+
+.img>:hover .hovercontent {
+    opacity: 1;
+  }
+.hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+/* .hovercontent{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    height: 20px;
+    font-size: 20px;
+   width: 100%;
+    transition: 0.2s;
+} */
+.hovercontent{
+    color: white;
+    height: 20px;
+    font-size: 20px;
+   width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+/* .img>a{
+    position: absolute;
+    text-decoration: none;
+    background-color: transparent;
+} */
+ 
+
+.hovercontent>i::before{
+    content: "";
+}
+
+
+/* .img>a:hover i::before{
+   color: white;
+    opacity: 1;
+ 
+
+}  */
