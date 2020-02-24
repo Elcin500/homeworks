@@ -1,0 +1,461 @@
+body {
+    left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main {
+    width: 100%;
+    /* height: 300vh; */
+
+}
+
+.head {
+    width: 100%;
+    height: 167px;
+    /* position: relative; */
+}
+
+.head1 {
+    /* position: absolute; */
+    /* z-index: 2; */
+    position: relative;
+    width: 1140px;
+    height: 131px;
+    padding: 30px 15px;
+    max-width: 1140px;
+    margin: 0px 104.5px;
+}
+
+.headlast {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50px);
+    width: 1140px;
+    height: 71px;
+    padding-right: 15px;
+}
+
+.fixed {
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 0;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(189, 187, 187);
+    background-color: white;
+
+    z-index: 1;
+}
+
+.fixed>ul {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.fixed>ul li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.fixed .color {
+
+    color: #930077;
+}
+
+.fixed>ul a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.photo {
+    height: 700px;
+
+}
+
+.photoplace {
+    /* background-color: green; */
+    height: 700px;
+    background-size: cover;
+    background-image: url('https://colorlib.com/preview/theme/wines/images/hero_1.jpg');
+    max-width: 1140px;
+    margin-left: 7%;
+    position: relative;
+    /* z-index: auto; */
+
+}
+
+.write {
+    top: 50%;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: initial;
+}
+
+.write {
+    color: white;
+
+
+}
+
+.write>h6 {
+    padding-left: 62px;
+    font-size: 13px;
+}
+
+.add {
+    height: 669px;
+    /* background-color: black; */
+    position: relative;
+}
+
+.addtop {
+    position: absolute;
+    text-transform: uppercase;
+    padding-left: 40%;
+
+
+}
+
+.addtop1 {
+
+    display: inline-block;
+    position: absolute;
+    padding-left: 32%;
+    margin-top: 49px;
+}
+
+.addbottom {
+    max-width: 1140px;
+    height: 427px;
+    margin-left: 7%;
+    padding-top: 144px;
+    display: flex;
+    border: 1px;
+}
+
+.addbottom>div {
+    flex: 1;
+    height: 449px;
+    width: 350px;
+    /* padding-left: 10px; */
+    position: relative;
+
+}
+
+.addbottom div img {
+    width: 350px;
+
+}
+
+.child {
+    text-align: center;
+}
+
+.addbottom>div::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(245, 243, 243);
+    width: 300px;
+    height: 344px;
+
+    padding-left: 25px;
+}
+
+.hover {
+    position: absolute;
+    height: 199px;
+    width: 290px;
+    bottom: 0;
+    left: 21px;
+    right: 0;
+    top: 232px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    /* visibility: hidden; */
+    transition: 0.4s;
+
+}
+
+.hover>h3>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.a629 {
+    padding-left: 4px;
+    font-size: 20px;
+    color: rgb(241, 10, 230);
+    display: block;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    margin-top: 27px;
+    margin-left: 49px;
+    background-color: #930077;
+    line-height: 1.7;
+    inline-size: 209.5px;
+
+}
+
+.btn>span {
+    font-size: 18px;
+    padding-right: 7px;
+}
+
+.addbottom>div:hover .hover {
+
+    /* content: ""; */
+    /* transition: 0.2s; */
+    opacity: 1;
+
+}
+
+.parallax {
+    min-height: 500px;
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.parallax>div>h1,
+h5 {
+    color: rgb(255, 255, 255);
+    top: 50%;
+}
+
+.parallax>div {
+    /* margin-top: 107px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.flex2 {
+
+    margin-top: 81px;
+
+    display: flex;
+    height: 440px;
+    margin-left: 111px;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+}
+
+.flex2>div {
+
+    width: 330px;
+    max-width: 330px;
+    flex: 1;
+    min-width: 330px;
+    min-height: 440px;
+    text-align: center;
+    padding-right: 50px;
+
+}
+
+.flex2>div>p {
+    font-size: 23px;
+    color: rgb(121, 119, 119);
+    font-family: cursive;
+}
+
+.flex2>div>img {
+    height: 72px;
+    width: 72px;
+    border: 4px solid rgb(195, 0, 255);
+    border-radius: 50px;
+}
+
+.winesblog {
+    height: 200px;
+    text-align: center;
+}
+
+.winesblog>a {
+    text-decoration: none;
+    color: rgb(162, 0, 255);
+}
+
+.winesblog>a>span {
+    font-size: 15px;
+}
+
+.flex3 {
+    display: flex;
+    height: 448px;
+    /* flex-flow: row wrap; */
+    margin-left: 111px;
+}
+
+.flex3>div {
+    flex: 1;
+    width: 360px;
+    min-width: 360px;
+    min-height: 448px;
+    max-width: 360px;
+    padding-right: 40px;
+}
+
+.flex3>div>h2 {
+    color: rgb(48, 47, 47);
+    font-weight: 100;
+
+}
+
+.flex3>div>p {
+    color: rgb(104, 104, 104);
+}
+
+.flex3>div>span a {
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+}
+
+.flex3>div>img {
+    height: 217.8px;
+    width: 330px;
+}
+
+.gray {
+
+    background-color: rgb(243, 241, 241);
+}
+
+.lasticons {
+    text-align: center;
+    margin-top: 15%;
+    height: 50px;
+}
+
+.lasticons>a {
+    background-color: #930077;
+    border: 1px solid #930077;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+
+
+    font-size: 15px;
+    color: white;
+    position: relative;
+}
+
+.lasticons>a>span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    padding-left: 3px;
+}
+
+.sign {
+    text-align: center;
+    margin-top: 28px;
+    color: rgb(150, 148, 148);
+}
+
+/* About starts from here  */
+
+.flexabout1 {
+    display: flex;
+    height: 784px;
+    flex-flow: row wrap;
+    margin-top: 100px;
+}
+
+.flexabout1>div {
+    flex: 1;
+    min-height: 392px;
+    max-width: 50%;
+    min-width: 50%;
+    margin-bottom: 32px;
+}
+
+.flexabout1>div>img {
+    width: 540px;
+    height: 360px;
+    margin-left: 70px;
+}
+
+.flexabout1>div>p {
+    color: gray;
+    font-size: 20px;
+    margin-left: 70px;
+    padding-right: 30%;
+}
+
+.flexabout1>div>h2 {
+    margin-left: 70px;
+
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flexabouta{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 65px;
+}
+.flexabouta>div{
+ width: 379px;
+ height: 137px;
+ max-width: 379px;
+ min-width: 379px;
+ max-height: 137px;
+ min-height: 137px;
+    flex: 1;
+    padding-left: 20px;
+    
+}
+.flexabouta>div>p{
+font-size: 20px;
+padding-right: 66px;
+color: gray;
+}
+.flexabouta>div>h2{
+    font-weight: lighter;
+}
+.icondivabout{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+margin-top: 12px;
+}
+.icondivabout>i{
+    font-size: 37px;
+    color: #930077;
+}
