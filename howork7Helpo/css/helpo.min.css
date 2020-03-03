@@ -1,0 +1,50 @@
+.nav a {
+    position: relative
+}
+
+.nav ul {
+    position: absolute;
+    top: 50px;
+    opacity: 0
+}
+
+.nav ul li {
+    list-style-type: none
+}
+
+.nav a:hover ul {
+    text-decoration: none
+}
+
+.nav div {
+    padding-right: 15px;
+    color: #777
+}
+
+nav {
+    height: 71px;
+    background-color: white;
+    position: fixed
+}
+
+nav img {
+    height: 40px;
+    width: 122px
+}
+
+nav .Donate {
+    display: inline-block;
+    color: black;
+    background-color: #c1f7d5;
+    height: 71px;
+    width: 170px;
+    border: 1px solid #c1f7d5;
+    border-radius: 5px
+}
+
+nav .Donate span {
+    display: inline-block;
+    margin-top: 21px
+}
+
+/*# sourceMappingURL=helpo.min.css.map */
