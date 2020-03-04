@@ -1,30 +1,68 @@
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
 .nav a {
   position: relative;
 }
 
+.nav .pages {
+  right: 90px;
+  width: 380px;
+  height: 364px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.nav .pages li {
+  width: 50%;
+}
+
 .nav ul {
   position: absolute;
-  top: 50px;
+  top: 55px;
   opacity: 0;
+  background-color: #354463;
+  color: white;
+  width: 235px;
+  height: 312px;
+  text-align: start;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .nav ul li {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
-.nav a:hover ul {
+.nav a:hover + ul {
   text-decoration: none;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .nav div {
-  padding-right: 15px;
+  padding-right: 40px;
   color: #777;
 }
 
 nav {
   height: 71px;
   background-color: white;
-  position: fixed;
 }
 
 nav img {
@@ -45,5 +83,10 @@ nav .Donate {
 nav .Donate span {
   display: inline-block;
   margin-top: 21px;
+}
+
+section {
+  height: 100vh;
+  background-color: black;
 }
 /*# sourceMappingURL=helpo.css.map */
