@@ -1,5 +1,3 @@
-
-
 header {
     position: fixed;
     z-index: 1;
@@ -30,7 +28,7 @@ header {
     ul {
         position: absolute;
         top: 55px;
-      
+
         opacity: 0;
         background-color: #354463;
         color: white;
@@ -39,10 +37,10 @@ header {
         text-align: start;
         padding-top: 20px;
         padding-left: 10px;
-       
- 
-            li {
-                   list-style-type: none;
+
+
+        li {
+            list-style-type: none;
             margin-bottom: 10px;
         }
 
@@ -50,12 +48,12 @@ header {
 
     a:hover+ul {
         text-decoration: none;
-      visibility: visible;
+        visibility: visible;
         opacity: 1;
-        transition: 0.5s ;
+        transition: 0.5s;
         transform: scaleX(1);
     }
-   
+
 
     div {
         padding-right: 40px;
@@ -82,20 +80,43 @@ nav {
     .Donate {
         display: inline-block;
         color: black;
-        background-color: #c1f7d5;
+        // background-color: #c1f7d5;
         height: 71px;
-        width: 170px;
-        border: 1px solid #c1f7d5;
-        border-radius: 5px;
+        width: 260px;
+        // border: 1px solid #c1f7d5;
+        // border-radius: 1px;
+        position: relative;
+        left: 16px;
 
         span {
-            display: inline-block;
-            margin-top: 21px;
+            // display: inline-block;
+            // margin-top: 21px;
+            width: 260px;
+            height: 71px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            background-color: #c1f7d5;
+            // text-align: center;
+            // color: #c1f7d5;
+
         }
 
     }
+
+    .Donate>span:hover {
+        height: 62px;
+        margin-top: 5px;
+        width: 219px;
+        margin-left: 30px;
+        background-color: #354463;
+        color: #c1f7d5;
+transition: .5s;
+
+    }
 }
-section{
+
+section {
     height: 100vh;
     background-color: black;
 }
