@@ -22,12 +22,12 @@ body {
     padding-bottom: 25px;
     padding-right: 16px;
     padding-left: 16px;
-     position: fixed;
-
+    position: fixed;
+z-index: 2;
     display: inline-block;
     left: 0;
     top: 0;
-
+width: 100%;
 }
 
 .navbarchild {
@@ -40,21 +40,23 @@ body {
 }
 
 .navbarchild>a {
+    display: inline-block;
     width: 181.984px;
-    height: 42px;
-    padding: 5px 0px;
+    height: 50px;
+    /* padding: 5px 0px; */
     text-decoration: none;
     color: #fed136;
     font-size: 2.75em;
     font-family: 'Tangerine', serif;
     cursor: pointer;
+    /* padding-bottom: 45px; */
 }
 
 .ul {
     position: absolute;
     list-style-type: none;
-    bottom: 14px;
-
+    /* bottom: 0px; */
+    top: 10px;
 
 }
 
@@ -65,7 +67,6 @@ body {
 .ul>ul li {
     display: inline-block;
     padding: 10px;
-
 }
 
 
@@ -119,6 +120,10 @@ body {
 
 .services {
     text-align: center;
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    /* display: flex; */
 }
 
 .services>h3 {
@@ -128,16 +133,21 @@ body {
 
 .services div {
     display: inline-block;
-    height: 398px;
-    width: 210px;
-    padding-right: 100px;
-    padding-left: 100px;
+    height: 308px;
+        width: 210px;
+    /* padding-right: 100px; */
+    /* padding-left: 100px; */
+    border: 1px solid white;
+    margin-right: 120px;
+    /* position: absolute; */
 }
 
 .services div .lorem {
     width: 210px;
     height: 168px;
 }
+
+
 
 .icon {
     display: inline-block;
@@ -147,6 +157,7 @@ body {
     border-radius: 50%;
     width: 139px;
     height: 128px;
+
 }
 
 .icon::before {
@@ -155,37 +166,48 @@ body {
 }
 
 .icon i::before {
-    font-size: 100px;
+    font-size: 60px;
+    color: white;
 }
-.lorem>p{
+
+.icon i {
+    padding-top: 22px;
+}
+
+.lorem>p {
     color: rgb(92, 92, 92);
 }
-.portfolio{
+
+.portfolio {
     height: 500px;
-}   
-.portfoliohead{
+}
+
+.portfoliohead {
     height: 100px;
     text-align: center;
 }
 
-.portfoliochild{
-    display: inline-block   ;
+.portfoliochild {
+    display: inline-block;
     height: 263.500px;
     width: 210px;
 }
-.img>a>img{
+
+.img>a>img {
     width: 210px;
     height: 157.5px;
 }
- .img{
+
+.img {
     position: relative;
     height: 162px;
-} 
+}
 
 .img>:hover .hovercontent {
     opacity: 1;
-  }
-.hover{
+}
+
+.hover {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -207,11 +229,11 @@ body {
    width: 100%;
     transition: 0.2s;
 } */
-.hovercontent{
+.hovercontent {
     color: white;
     height: 20px;
     font-size: 20px;
-   width: 100%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -221,14 +243,15 @@ body {
     text-align: center;
 
 }
+
 /* .img>a{
     position: absolute;
     text-decoration: none;
     background-color: transparent;
 } */
- 
 
-.hovercontent>i::before{
+
+.hovercontent>i::before {
     content: "";
 }
 
