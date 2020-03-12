@@ -1,11 +1,13 @@
 header {
     position: fixed;
+    position: relative;
     z-index: 1;
     width: 100%;
 }
 
 .nav {
 
+    // position: absolute;
     a {
         position: relative;
 
@@ -70,9 +72,10 @@ header {
 nav {
     height: 71px;
     background-color: white;
-
-
-
+    position: absolute;
+    .lang{
+        margin-right: 275px;
+    }
     img {
         height: 40px;
         width: 122px;
@@ -188,23 +191,27 @@ section {
         bottom: 0;
         background-image: url(https://demo.artureanec.com/html/helpo/mono/img/video_block.jpg);
         background-size: cover;
+
         a {
             color: white;
             font-size: 45px;
-            span{
+
+            span {
                 display: inline-block;
                 font-size: 16px;
                 line-height: 1.6;
             }
         }
-a:hover{
-    color: #c1f7d5;
-}
-        &:hover{
-            transform-style: preserve-3d ;
-background-size: 400px; 
-// transition-duration: 5s;
+
+        a:hover {
+            color: #c1f7d5;
+        }
+
+        &:hover {
+            transform-style: preserve-3d;
+            background-size: 400px;
+            // transition-duration: 5s;
         }
     }
-    
+
 }

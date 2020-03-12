@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  position: relative;
   z-index: 1;
   width: 100%;
 }
@@ -63,6 +64,11 @@ header {
 nav {
   height: 71px;
   background-color: white;
+  position: absolute;
+}
+
+nav .lang {
+  margin-right: 275px;
 }
 
 nav img {
