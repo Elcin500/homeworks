@@ -23,11 +23,11 @@ body {
     padding-right: 16px;
     padding-left: 16px;
     position: fixed;
-z-index: 2;
+    z-index: 2;
     display: inline-block;
     left: 0;
     top: 0;
-width: 100%;
+    width: 100%;
 }
 
 .navbarchild {
@@ -104,7 +104,8 @@ width: 100%;
     font-size: 40px;
     color: white;
 }
-.centerwords> pre{
+
+.centerwords>pre {
     color: white;
 }
 
@@ -140,7 +141,7 @@ width: 100%;
 .services div {
     display: inline-block;
     height: 308px;
-        width: 210px;
+    width: 210px;
     /* padding-right: 100px; */
     /* padding-left: 100px; */
     border: 1px solid white;
@@ -193,52 +194,57 @@ width: 100%;
     text-align: center;
 }
 
-.portfoliochild{
+.portfoliochild {
     justify-content: space-evenly;
     flex-flow: row wrap;
 
 
 }
-.portfoliochild>div{
+
+.portfoliochild>div {
     position: relative;
-  border: 1px solid red;
-  height: 365px;
-  width: 350px;
-  margin-bottom: 30px;
+    /* border: 1px solid red; */
+    height: 365px;
+    width: 350px;
+    margin-bottom: 30px;
 }
-.portfolio-hover{
+
+.portfolio-hover {
     height: 250px;
 }
-.portfoliochild>div img{
+
+.portfoliochild>div img {
     height: 262px;
     width: 348px;
 }
-.portfolio-caption{
+
+.portfolio-caption {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
 }
-.portfoliochild .hover{
+
+.portfoliochild .hover {
     position: absolute;
-/* right: 50%; */
-/* transform: translateX(50%); */
-top: 0;
-opacity: 0;
-height: 262px;
-width: 348px;
-background-color: rgba(254,209,54,.9);
-display: flex;
-justify-content: center;
-align-items: center;
+    top: 0;
+    opacity: 0;
+    height: 262px;
+    width: 348px;
+    background-color: rgba(254, 209, 54, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.portfoliochild .hover i{
-font-size: 50px;
-color: white;
-top: 50%;
+
+.portfoliochild .hover i {
+    font-size: 50px;
+    color: white;
+    top: 50%;
 }
-.portfoliochild>div:hover .hover{
-opacity: 1;
-transition: .5s;
+
+.portfoliochild>div:hover .hover {
+    opacity: 1;
+    transition: .5s;
 }
