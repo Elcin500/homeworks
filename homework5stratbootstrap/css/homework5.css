@@ -50,6 +50,9 @@ width: 100%;
     font-family: 'Tangerine', serif;
     cursor: pointer;
     /* padding-bottom: 45px; */
+    position: absolute;
+    bottom: 0px;
+
 }
 
 .ul {
@@ -101,7 +104,9 @@ width: 100%;
     font-size: 40px;
     color: white;
 }
-
+.centerwords> pre{
+    color: white;
+}
 
 .centerwords>a {
     background-color: #fed136;
@@ -120,10 +125,11 @@ width: 100%;
 
 .services {
     text-align: center;
-    height: 200vh;
+    height: 98vh;
     width: 100%;
     position: relative;
     /* display: flex; */
+    top: 65px;
 }
 
 .services>h3 {
@@ -187,78 +193,52 @@ width: 100%;
     text-align: center;
 }
 
-.portfoliochild {
-    display: inline-block;
-    height: 263.500px;
-    width: 210px;
-}
+.portfoliochild{
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 
-.img>a>img {
-    width: 210px;
-    height: 157.5px;
-}
 
-.img {
+}
+.portfoliochild>div{
     position: relative;
-    height: 162px;
+  border: 1px solid red;
+  height: 365px;
+  width: 350px;
+  margin-bottom: 30px;
 }
-
-.img>:hover .hovercontent {
-    opacity: 1;
+.portfolio-hover{
+    height: 250px;
 }
-
-.hover {
+.portfoliochild>div img{
+    height: 262px;
+    width: 348px;
+}
+.portfolio-caption{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.portfoliochild .hover{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+/* right: 50%; */
+/* transform: translateX(50%); */
+top: 0;
+opacity: 0;
+height: 262px;
+width: 348px;
+background-color: rgba(254,209,54,.9);
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
-/* .hovercontent{
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-    height: 20px;
-    font-size: 20px;
-   width: 100%;
-    transition: 0.2s;
-} */
-.hovercontent {
-    color: white;
-    height: 20px;
-    font-size: 20px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-
+.portfoliochild .hover i{
+font-size: 50px;
+color: white;
+top: 50%;
 }
-
-/* .img>a{
-    position: absolute;
-    text-decoration: none;
-    background-color: transparent;
-} */
-
-
-.hovercontent>i::before {
-    content: "";
+.portfoliochild>div:hover .hover{
+opacity: 1;
+transition: .5s;
 }
-
-
-/* .img>a:hover i::before{
-   color: white;
-    opacity: 1;
- 
-
-}  */
