@@ -185,7 +185,7 @@ body {
 
 .portfolio {
     /* height: 500px; */
-background-color: #f8f9fa;
+    background-color: #f8f9fa;
 
 }
 
@@ -248,35 +248,43 @@ background-color: #f8f9fa;
     opacity: 1;
     transition: .5s;
 }
-#team{
-background-color: #f8f9fa;
+
+#team {
+    background-color: #f8f9fa;
 }
-.teammember{
+
+.teammember {
     justify-content: space-around;
     flex-flow: row wrap;
 }
-.teammember>div{
+
+.teammember>div {
     text-align: center;
 }
-.teammember>div>img{
+
+.teammember>div>img {
     width: 225px;
     height: 225px;
-    border: 7px solid rgba(0,0,0,.1);
+    border: 7px solid rgba(0, 0, 0, .1);
     border-radius: 50%;
 }
-.teammember>div li{
+
+.teammember>div li {
     text-decoration: none;
     display: inline-block;
 }
-.teammember>div li i{
+
+.teammember>div li i {
     font-size: 20px;
     color: white;
     margin-top: 15px;
 }
-.teammember>div ul{
+
+.teammember>div ul {
     padding-left: 0;
 }
-.teammember>div li a{
+
+.teammember>div li a {
     height: 50px;
     display: inline-block;
     width: 50px;
@@ -285,54 +293,114 @@ background-color: #f8f9fa;
     border-radius: 50%;
     /* text-align: center; */
 }
-.teammember>div li a:hover{
+
+.teammember>div li a:hover {
     background-color: #fed136;
-    border-color:#fed136;
+    border-color: #fed136;
     transition: .4s;
 }
-.lastp>p{
+
+.lastp>p {
     margin-top: 50px;
     width: 100vh;
     display: inline-block;
     color: #6c757d;
 }
-#Contact{
+
+#Contact {
     background-color: #212529;
     background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/map-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 699px;
 }
-.contacthead{
+
+.contacthead {
     padding-top: 60px;
 }
-.contacthead>h1,p{
+
+.contacthead>h1,
+p {
     color: white;
 }
-.contactmain input{
-    padding:"20px";
+
+.contactmain input {
+    padding: "20px";
     line-height: 1.5;
     /* width: 100%; */
-    border: 1px solid white;    
-border-radius: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
 
 }
-.contactleft input{ 
-   /* max-width: 50%; */
-   width: 560px;
-   height: 66px;
+
+.contactleft input {
+    /* max-width: 50%; */
+    width: 560px;
+    height: 66px;
 }
 
-.contactright input{
+.contactright input {
     width: 540px;
     height: 294px;
-text-align: justify;
+    text-align: justify;
 }
 
-.contactleft>div{
+.contactleft>div {
     margin-bottom: 50px;
 }
-.contactmain{
+
+.contactmain {
     display: flex;
     justify-content: space-evenly;
+}
+
+.sendmessage button{
+    width: 231px;
+    height: 69px;
+    background-color: #fed136;
+    border-color: #fed136;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.sendmessage button:hover{
+    background-color: #fec810;
+    border-color: #fec810;
+}
+.lastt{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+margin-top:15px;
+}
+.lastt li{
+text-decoration: none;
+display: inline-block;
+text-align: center;
+
+}
+.lastt li a{
+    height: 50px;
+    display: inline-block;
+    width: 50px;
+    background-color: #212529;
+    border: 1px solid #212529;
+    border-radius: 50%;
+}
+.lastt li i{
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+.lastt li a:hover{
+    background-color: #fed136;
+    border-color: #fed136;
+    transition: .4s;
+}
+.lastt p{
+    color:black;
+}
+.lastt>div>a{
+    color: #fed136;
 }
