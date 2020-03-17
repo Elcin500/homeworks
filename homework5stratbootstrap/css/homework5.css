@@ -154,8 +154,6 @@ body {
     height: 168px;
 }
 
-
-
 .icon {
     display: inline-block;
     background-color: #ffd94e;
@@ -247,4 +245,16 @@ body {
 .portfoliochild>div:hover .hover {
     opacity: 1;
     transition: .5s;
+}
+.teammember{
+    justify-content: space-around;
+}
+.teammember>div{
+    text-align: center;
+}
+.teammember>div>img{
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0,0,0,.1);
+    border-radius: 50%;
 }
