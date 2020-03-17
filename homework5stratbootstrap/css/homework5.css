@@ -185,17 +185,19 @@ body {
 
 .portfolio {
     /* height: 500px; */
+background-color: #f8f9fa;
+
 }
 
 .portfoliohead {
     height: 100px;
     text-align: center;
+
 }
 
 .portfoliochild {
     justify-content: space-evenly;
     flex-flow: row wrap;
-
 
 }
 
@@ -246,6 +248,9 @@ body {
     opacity: 1;
     transition: .5s;
 }
+#team{
+background-color: #f8f9fa;
+}
 .teammember{
     justify-content: space-around;
     flex-flow: row wrap;
@@ -284,4 +289,50 @@ body {
     background-color: #fed136;
     border-color:#fed136;
     transition: .4s;
+}
+.lastp>p{
+    margin-top: 50px;
+    width: 100vh;
+    display: inline-block;
+    color: #6c757d;
+}
+#Contact{
+    background-color: #212529;
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/map-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 699px;
+}
+.contacthead{
+    padding-top: 60px;
+}
+.contacthead>h1,p{
+    color: white;
+}
+.contactmain input{
+    padding:"20px";
+    line-height: 1.5;
+    /* width: 100%; */
+    border: 1px solid white;    
+border-radius: 2%;
+
+}
+.contactleft input{ 
+   /* max-width: 50%; */
+   width: 560px;
+   height: 66px;
+}
+
+.contactright input{
+    width: 540px;
+    height: 294px;
+text-align: justify;
+}
+
+.contactleft>div{
+    margin-bottom: 50px;
+}
+.contactmain{
+    display: flex;
+    justify-content: space-evenly;
 }
