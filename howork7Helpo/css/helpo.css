@@ -192,4 +192,40 @@ section .audio:hover {
           transform-style: preserve-3d;
   background-size: 400px;
 }
+
+section .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section .icons div {
+  padding-right: 70px;
+  font-weight: 700;
+}
+
+section .icons div p {
+  color: #c1f7d5;
+  font-size: 11px;
+}
+
+section .icons div a {
+  color: white;
+}
+
+section .icons div i {
+  padding-right: 20px;
+}
+
+section .icons div a:hover {
+  opacity: .75;
+  color: #fff;
+  text-decoration: none;
+}
 /*# sourceMappingURL=helpo.css.map */
