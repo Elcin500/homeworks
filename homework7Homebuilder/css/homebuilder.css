@@ -274,4 +274,31 @@ section .container .row img {
 body {
   height: 1000vh;
 }
+
+section .third-section .row .colimg {
+  background-image: url(https://colorlib.com/preview/theme/homebuilder/images/about.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 606px;
+  width: 555px;
+}
+
+section .third-section .row .colimg a:hover {
+  color: white;
+}
+
+section .third-section .row .colimg a {
+  height: 80px;
+  width: 80px;
+  background-color: #fdbe34;
+  border: 1px;
+  border-radius: 50%;
+  margin-top: 50%;
+  margin-left: 93%;
+}
+
+section .third-section .row .colimg a i {
+  font-size: 20px;
+}
 /*# sourceMappingURL=homebuilder.css.map */
