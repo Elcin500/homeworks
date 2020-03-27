@@ -38,11 +38,13 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // text-align: center;
                 margin-right: 4px;
                 margin-bottom: 30px;
 
                 i {
                     color: #4d4d4d;
+                    padding-left: 2px;
                 }
             }
 
@@ -300,6 +302,7 @@ section {
         }
     }
 }
-body{
+
+body {
     height: 1000vh;
 }
