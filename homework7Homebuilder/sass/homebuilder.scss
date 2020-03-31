@@ -306,12 +306,55 @@ section {
 }
 
 body {
-    height: 1000vh;
+    height: 500vh;
 }
 
 section {
     .third-section {
+       .row2{
+.col{
+    span{
+        color: #fdbe34;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    h2{
+        font-size: 30px;
+        
+    }
+   p{
+    margin-bottom: 1rem;    
+    // margin-top: 0;
+   }
+}
+       }
         .row {
+            .buttons{
+                ul{
+                    li{
+                        a{
+                            color: black;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            border-radius: 4px;
+                            font-weight: 600;
+                        }
+                       a:active{
+                           background-color: #fdbe34;
+
+                       }
+                    }
+                }
+               div{
+                   border: 1px solid rgba(0, 0, 0, 0.05);
+                   p{
+                       font-weight: 400;
+                       font-size: 17px;
+                   }
+
+               }
+            }
+            
             .colimg {
                 background-image: url(https://colorlib.com/preview/theme/homebuilder/images/about.jpg);
                 background-size: cover;

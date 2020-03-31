@@ -273,7 +273,42 @@ section .container .row img {
 }
 
 body {
-  height: 1000vh;
+  height: 500vh;
+}
+
+section .third-section .row2 .col span {
+  color: #fdbe34;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+section .third-section .row2 .col h2 {
+  font-size: 30px;
+}
+
+section .third-section .row2 .col p {
+  margin-bottom: 1rem;
+}
+
+section .third-section .row .buttons ul li a {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+section .third-section .row .buttons ul li a:active {
+  background-color: #fdbe34;
+}
+
+section .third-section .row .buttons div {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+section .third-section .row .buttons div p {
+  font-weight: 400;
+  font-size: 17px;
 }
 
 section .third-section .row .colimg {
