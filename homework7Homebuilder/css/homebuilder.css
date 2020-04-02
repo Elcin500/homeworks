@@ -1,6 +1,7 @@
 body {
   font-weight: 400;
   font-size: 16px;
+  height: 520vh;
 }
 
 body a {
@@ -272,10 +273,6 @@ section .container .row img {
   width: 70px;
 }
 
-body {
-  height: 500vh;
-}
-
 section .third-section .row2 .col span {
   color: #fdbe34;
   font-size: 16px;
@@ -381,5 +378,73 @@ section .third-section .row .colimg a i {
   color: rgba(0, 0, 0, 0.8);
   margin: 0px;
   padding-left: 5px;
+}
+
+.fifth-section .row .col::before {
+  content: '';
+  background-color: #00043c;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.fifth-section .row .col:hover .afirst {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.fifth-section .row .col:hover::before {
+  opacity: 0.7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.fifth-section .row .col {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+.fifth-section .row .col .afirst:hover {
+  color: white;
+}
+
+.fifth-section .row .col .afirst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: #fdbe34;
+  border: 1px solid #fdbe34;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.fifth-section .row .col div {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+.fifth-section .row .col div h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.fifth-section .row .col div h2 a:hover {
+  color: white;
+}
+
+.fifth-section .row .col div span {
+  color: white;
 }
 /*# sourceMappingURL=homebuilder.css.map */

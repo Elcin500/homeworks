@@ -1,6 +1,7 @@
 body {
     font-weight: 400;
     font-size: 16px;
+    height: 520vh;
 
     a {
         color: white;
@@ -63,9 +64,12 @@ body {
 }
 
 .bottom {
+    
     nav {
         background-color: #00043c;
         padding: 0;
+
+       
 
         .container {
 
@@ -306,9 +310,7 @@ section {
     }
 }
 
-body {
-    height: 500vh;
-}
+
 
 section {
     .third-section {
@@ -416,7 +418,7 @@ section {
 
     .container {
 
-       
+
 
 
         .row {
@@ -425,7 +427,8 @@ section {
             z-index: 2;
 
             .col {
-flex-flow: wrap;
+                flex-flow: wrap;
+
                 span {
                     line-height: 1;
                     font-weight: 700;
@@ -442,9 +445,80 @@ flex-flow: wrap;
                     line-height: 1.3;
                     color: rgba(0, 0, 0, 0.8);
                     margin: 0px;
-                   padding-left: 5px;
-                    
+                    padding-left: 5px;
 
+
+                }
+            }
+        }
+    }
+}
+
+.fifth-section {
+    .row {
+        .col::before {
+            content: '';
+            background-color: #00043c;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+
+        .col:hover .afirst {
+            opacity: 1;
+transition: .5s;
+        }
+
+        .col:hover::before {
+            opacity: 0.7;
+            transition: .5s;
+        }
+
+        .col {
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            position: relative;
+
+            .afirst:hover {
+                color: white;
+            }
+
+            .afirst {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 70px;
+                background-color: #fdbe34;
+                border: 1px solid #fdbe34;
+                border-radius: 50%;
+                opacity: 0;
+                cursor: zoom-in;
+            }
+
+            div {
+                position: absolute;
+                bottom: 0;
+                left: 25px;
+
+
+
+                h2 {
+                    color: white;
+                    font-size: 18px;
+
+                    a:hover {
+                        color: white;
+                    }
+                }
+
+                span {
+                    color: white;
                 }
             }
         }
