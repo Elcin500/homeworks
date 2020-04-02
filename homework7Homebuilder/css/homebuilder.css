@@ -362,6 +362,11 @@ section .third-section .row .colimg a i {
   z-index: 2;
 }
 
+.fourth .container .row .col {
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
 .fourth .container .row .col span {
   line-height: 1;
   font-weight: 700;
