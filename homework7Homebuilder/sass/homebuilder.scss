@@ -1,8 +1,9 @@
 body {
     font-weight: 400;
     font-size: 16px;
-    height: 520vh;
+    height: 600vh;
 
+    // font-family: "Poppins", Arial, sans-serif;
     a {
         color: white;
     }
@@ -64,12 +65,12 @@ body {
 }
 
 .bottom {
-    
+
     nav {
         background-color: #00043c;
         padding: 0;
 
-       
+
 
         .container {
 
@@ -468,7 +469,7 @@ section {
 
         .col:hover .afirst {
             opacity: 1;
-transition: .5s;
+            transition: .5s;
         }
 
         .col:hover::before {
@@ -520,6 +521,104 @@ transition: .5s;
                 span {
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+.sixth-section {
+    padding: 7em 0;
+    background-color: #fdbe34;
+
+    .container {
+        .row {
+            .col {
+
+
+                h2 {
+                    margin-bottom: 1.5rem;
+                    font-size: 40px;
+                    color: #000000;
+
+                }
+
+                p {
+                    color: #000000;
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding-right: 40px;
+                    padding-left: 10px;
+                    // margin-bottom: 1.5rem !important;
+                    margin-bottom: 0;
+                }
+            }
+
+            .col2 {
+
+                .row {
+
+                    .cola {
+
+                        border: 1px;
+                        border-radius: 3%;
+                        margin-right: 20px;
+                        width: 350px;
+                        display: flex;
+                        // display: ;
+                        margin-bottom: 10px;
+                        position: relative;
+
+                        .icon {
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            background-color: #fdbe34;
+                            border: 1px;
+                            border-radius: 50%;
+                            text-align: center;
+                            top: -20px;
+                            i{
+                                margin-top: 11px;
+                                color: white;
+                            }
+                        }
+
+
+
+                        .bottomimg {
+                            margin-bottom: 50px;
+
+                            span {
+                                margin-left: 15px;
+                                font-weight: 500 !important;
+                                font-size: 20px;
+                                margin-bottom: 0;
+                                color: #000000;
+
+                            }
+
+                            p {
+                                padding-left: 15px;
+                                display: flex;
+                                font-size: 14px;
+                                color: #333333;
+                                font-weight: 400 !important;
+                                // padding-right: 0px;
+                            }
+
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                border: 1px;
+                                border-radius: 50%;
+                                float: left;
+                                margin-bottom: 5px;
+
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
