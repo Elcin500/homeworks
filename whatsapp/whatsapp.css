@@ -96,8 +96,32 @@
     border-radius: 50%;
     right: 3px;
     bottom: 1px;
-    a
 }
 .bottom>.sent>a>i{
     color: white;
+}
+.ul{
+    margin: 0px 5px;
+    padding: 0px;
+}
+.li-left{
+    margin-top: 5px;
+    padding: 1px 10px;
+    border: 1px;
+    border-radius:15px;
+    list-style-type: none;
+    background-color: white;
+    width: auto;
+    display: inline-block;
+}
+.li-right{
+    margin-top: 5px;
+    padding: 1px 10px;
+    border: 1px;
+    border-radius:15px;
+    list-style-type: none;
+    background-color: #9fff8e;
+    width: auto;
+    display: inline-block;
+    float: right;
 }

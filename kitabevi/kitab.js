@@ -99,7 +99,9 @@ function objectf(bookname,amount,author){
             list.removeChild(newBook2);
             hr.parentElement.removeChild(hr);
         });
-     
+        let bookname =document.getElementById('bookname').value='';
+        let amount=document.getElementById('amount').value='';
+        let author=document.getElementById('author').value='';
     
     };
 
