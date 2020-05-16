@@ -23,12 +23,29 @@ btnLeft.addEventListener('click',function(){
 
     let inputLeft=document.getElementById('inputLeft').value;
 
-    let newMessageLeft=new wp(inputLeft);
+    let newMessage=new wp(inputLeft);
 
-    createMessageLeft(newMessageLeft);
+
+    createMessageRight(newMessage);
+    createMessageLeft(newMessage);
+
 })
 
-function createMessageLeft(new1){
+
+// let delayLeft=setTimeout(createMessageLeft1,10000);
+
+btnRight.addEventListener('click',function(){
+
+    let inputRight=document.getElementById('inputRight').value;
+
+    let newMessage=new wp(inputRight);
+
+    createMessageLeft1(newMessage);
+    createMessageRight1(newMessage);
+
+})
+
+function createMessageLeft1(new1){
 
     let liLeft=document.createElement('li');
     liLeft.classList.add('li-left');
@@ -39,6 +56,55 @@ function createMessageLeft(new1){
     ulLeft.appendChild(liLeft);
     ulLeft.appendChild(br);
 
+    let inputLeft=document.getElementById('inputLeft').value='';
+    let inputRight=document.getElementById('inputRight').value='';
+
+}
+
+function createMessageRight1(new1){
+
+    let liRight=document.createElement('li');
+    liRight.classList.add('li-right');
+    let br=document.createElement('br');
+    
+    liRight.innerHTML=new1.fullmessage();
+
+    ulRight.appendChild(liRight);
+    ulRight.appendChild(br);
+
+    let inputRight=document.getElementById('inputRight').value='';
+    let inputLeft=document.getElementById('inputLeft').value='';
+
+}
+
+function createMessageLeft(new1){
+
+    let liLeft=document.createElement('li');
+    liLeft.classList.add('li-left');
+    let br=document.createElement('br');
+    
+    liLeft.innerHTML=new1.fullmessage();
+
+    ulRight.appendChild(liLeft);
+    ulRight.appendChild(br);
+
+    let inputLeft=document.getElementById('inputLeft').value='';
+    let inputRight=document.getElementById('inputRight').value='';
+
+}
+
+function createMessageRight(new1){
+
+    let liRight=document.createElement('li');
+    liRight.classList.add('li-right');
+    let br=document.createElement('br');
+    
+    liRight.innerHTML=new1.fullmessage();
+
+    ulLeft.appendChild(liRight);
+    ulLeft.appendChild(br);
+
+    let inputRight=document.getElementById('inputRight').value='';
     let inputLeft=document.getElementById('inputLeft').value='';
 
 }

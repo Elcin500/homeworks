@@ -1,5 +1,5 @@
 .center {
-    height: 300px;
+    height: 400px;
 }
 
 .a {
@@ -7,6 +7,7 @@
     border: 1px;
     border-radius: 10px;
     padding: 0px;
+
 }
 
 .nav1 {
@@ -103,25 +104,44 @@
 .ul{
     margin: 0px 5px;
     padding: 0px;
+    position: relative;
 }
 .li-left{
     margin-top: 5px;
+    margin-left: 3px;
     padding: 1px 10px;
     border: 1px;
     border-radius:15px;
     list-style-type: none;
     background-color: white;
-    width: auto;
     display: inline-block;
+
 }
+.li-left::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    border: 12px solid transparent;
+    border-top: 12px solid white;
+}
+
 .li-right{
     margin-top: 5px;
+    margin-right: 3px;
     padding: 1px 10px;
     border: 1px;
     border-radius:15px;
     list-style-type: none;
     background-color: #9fff8e;
-    width: auto;
-    display: inline-block;
+    display: inline-block; 
     float: right;
+}
+.li-right::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border: 12px solid transparent;
+    border-top: 12px solid #9fff8e; 
 }
