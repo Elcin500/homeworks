@@ -142,7 +142,12 @@
     margin: 0px 5px;
     padding: 0px;
     position: relative;
+    height: 400px;
+    overflow-y:auto;
+    overflow-x: unset;   /* bu overflowa gore mesaj tam dusmur  */
 }
+   
+
 
 .li-left {
     margin-top: 5px;
@@ -155,15 +160,15 @@
     display: inline-block;
 
 }
-
+/* 
 .li-left::before {
     content: '';
     position: absolute;
     top: 5px;
-    left: -5px;
-    border: 12px solid transparent;
-    border-top: 12px solid white;
-}
+    left: -5px; */
+    /* border: 12px solid transparent; */
+    /* border: 5px solid white; */
+/* }  */
 
 .li-right {
     margin-top: 5px;
@@ -176,12 +181,18 @@
     display: inline-block;
     float: right;
 }
-
+/* 
 .li-right::before {
     content: '';
     position: absolute;
-    top: 5px;
-    right: -5px;
-    border: 12px solid transparent;
-    border-top: 12px solid #9fff8e;
-}
+    bottom: 14px;
+    left: 230px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #9fff8e;
+    border: 1px;
+    border-bottom-right-radius: 100%;
+    /* border: 12px solid transparent; */
+    /* border: 5px solid #9fff8e; */
+/* } */ 

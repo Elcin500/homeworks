@@ -47,6 +47,7 @@ btnRight.addEventListener('click',function(){
 
 function createMessageLeft1(new1){
 
+  setTimeout(() => {
     let liLeft=document.createElement('li');
     liLeft.classList.add('li-left');
     let br=document.createElement('br');
@@ -59,6 +60,7 @@ function createMessageLeft1(new1){
     let inputLeft=document.getElementById('inputLeft').value='';
     let inputRight=document.getElementById('inputRight').value='';
 
+  }, 1000);
 }
 
 function createMessageRight1(new1){
@@ -78,7 +80,8 @@ function createMessageRight1(new1){
 }
 
 function createMessageLeft(new1){
-
+setTimeout(() => {
+    
     let liLeft=document.createElement('li');
     liLeft.classList.add('li-left');
     let br=document.createElement('br');
@@ -91,6 +94,7 @@ function createMessageLeft(new1){
     let inputLeft=document.getElementById('inputLeft').value='';
     let inputRight=document.getElementById('inputRight').value='';
 
+}, 1000);
 }
 
 function createMessageRight(new1){
