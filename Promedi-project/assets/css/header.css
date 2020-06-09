@@ -1,10 +1,12 @@
 .site-header {
+  left: 0;
+  top: 0;
   width: 100%;
+  background-color: black;
 }
 
 .site-header .header-top {
   padding: 20px 0px;
-  background-color: black;
 }
 
 .site-header .header-top .contact-info {
@@ -35,6 +37,7 @@
 
 .site-header .header-top .social-links li {
   display: inline-block;
+  margin-right: 3px;
 }
 
 .site-header .header-top .social-links li a {
@@ -56,5 +59,75 @@
 .site-header .header-top .social-links li a:hover {
   background-color: #396cf0;
   color: white;
+}
+
+.site-header .header-bottom {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header .header-bottom nav {
+  background-color: white;
+  padding: 20px 15px;
+  top: 0;
+  left: 0;
+}
+
+.site-header .header-bottom nav .container ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .header-bottom nav .container ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.site-header .header-bottom nav .container ul li a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.site-header .header-bottom nav .container ul li a i {
+  font-size: 13px;
+  color: grey;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.site-header .header-bottom nav .container div {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.site-header .header-bottom nav .container div a {
+  background-color: #396cf0;
+  color: white;
+  border-radius: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.site-header .header-bottom nav .container div a:hover {
+  background-color: #333333;
 }
 /*# sourceMappingURL=header.css.map */
