@@ -1,44 +1,39 @@
 $(document).ready(function () {
 
 
-    $(".site-header").load("_header.html",test);
+    $(".site-header").load("_header.html", test);
     $(".site-footer").load("_footer.html");
 
 
- 
+
 
 });
 
-function test(){
-    //  let li = $('#li');
-    let hidden = $('#hidden');
+function test() {
+    let lis = $('.ul li');
+    $(lis).each(function (index, element) {
+        // element == this
 
-    // $(li).hover(function () {
-    //         // over
-    //         $(hidden).removeClass('none');
-    //     }, function () {
-    //         // out
-    //         $(hidden).addClass('none');
-    //     }
-    // );
+        // console.log(element);
 
-    let lis=$('.ul li');
-
-    $.each(lis, function (queue, element) { 
-         
-            $(element).hover(function () {
+        $(element).hover(function () {
             // over
-            $(hidden).removeClass('none');           ////////////////qaldigim yer hiddeni de dovre sal sora hoveri yoxla
+            if(element.id==''){
+                return
+            }
+            let hidden = $(`#${element.id} div`);
+        
+            // console.log(hidden);
+
+            $(hidden).removeClass('none');
+
+            
         }, function () {
             // out
             $(hidden).addClass('none');
-        }
-    );
+        });
 
     });
-
-
-
-    console.log(lis);
+    // console.log(hidden);
 
 }

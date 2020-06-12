@@ -119,6 +119,8 @@
 .site-header .header-bottom nav .container ul li .hidden-menu {
   position: absolute;
   width: 200px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .site-header .header-bottom nav .container ul li .hidden-menu a {
@@ -152,7 +154,11 @@
 }
 
 .site-header .header-bottom nav .container ul li .none {
-  display: none;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .site-header .header-bottom nav .container div {
