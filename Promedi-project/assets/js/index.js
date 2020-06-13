@@ -2,10 +2,7 @@ $(document).ready(function () {
 
 
     $(".site-header").load("_header.html", header);
-    $(".site-footer").load("_footer.html",footer);
-
-
-    
+    $(".site-footer").load("_footer.html",footer);    
 
 $(document).scroll(function () { 
 
@@ -39,6 +36,23 @@ $(document).scroll(function () {
 
 });
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,   
+    dots:false,
+    // autoplay:true,
+    // autoplayTimeout:3000,
+    // autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    },
+    navText : ["<i class='fas fa-angle-double-left'></i>","<i class='fas fa-angle-double-right'></i>"]
+})
 
 
 });
