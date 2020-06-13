@@ -8,10 +8,6 @@ body a {
   outline: none;
 }
 
-main {
-  height: 1000px;
-}
-
 .site-footer {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -47,6 +43,10 @@ main {
 
 .arrow-top:hover {
   background-color: #333333;
+}
+
+.photo-carousel {
+  z-index: -1;
 }
 
 .photo-carousel .photo-1 {
@@ -173,5 +173,52 @@ main {
 .photo-carousel .owl-next:hover {
   background-color: #396cf0 !important;
   border: 0px !important;
+}
+
+.services {
+  margin-top: -130px;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 15px 0;
+  border: 1px solid #eeeeee;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.services .card {
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.services .card .card-img-top {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+          clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+  z-index: 2;
+}
+
+.services .card .back {
+  position: absolute;
+  height: 233px;
+  width: 327.328px;
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+          clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+}
+
+.services .card .card-body h5 {
+  font-weight: bolder !important;
+  font-size: 20px;
+}
+
+.services .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
