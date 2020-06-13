@@ -67,6 +67,11 @@
   margin-right: auto;
 }
 
+.site-header .header-bottom {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
 .site-header .header-bottom nav {
   background-color: white;
   padding: 20px 15px;

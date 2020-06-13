@@ -8,7 +8,6 @@ $(document).ready(function () {
     
 
 $(document).scroll(function () { 
-  console.log($(document).scrollTop());
 
   if($(document).scrollTop() >= 155)
   {
@@ -21,8 +20,26 @@ $(document).scroll(function () {
     $('.header-bottom').removeClass('fixed-top');
 
   }
+
+  if($(document).scrollTop() >= 0)
+  {
+      $('.arrow-top').removeClass('right');
+
+  }
+   if($(document).scrollTop() == 0)
+  {
+      $('.arrow-top').addClass('right');
+  }
   
+  $('.arrow-top').click(function (e) { 
+    e.preventDefault();
+    $(document).scrollTop(0);
 });
+
+
+});
+
+
 
 });
 
