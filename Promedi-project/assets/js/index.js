@@ -55,6 +55,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+
 });
 
 function header() {
@@ -93,3 +94,35 @@ function header() {
 function footer() {
     
 }
+
+ 
+
+$('.call-action').hover(function () {
+    // over
+    $('.call-action-text i').css({
+        top: '20px',
+        color:'#333333'
+    });
+    setTimeout(function(){
+        $('.call-action-text i').css({
+            display:'none'
+        })
+    },250);
+    setTimeout(function(){
+        $('.call-action-text i').css({
+            display:'inline-block',
+            top:'-25px'
+        })
+    },450);
+    setTimeout(function(){
+        $('.call-action-text i').css({
+            top:'0'
+        })
+    },470);
+
+
+}, function () {
+    // out
+    $('.call-action-text i').css('color', '#ffffff');
+}
+);
