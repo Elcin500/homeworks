@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 999;
 }
 
 .site-header .header-top {
