@@ -49,7 +49,6 @@ body {
 
 
 .photo-carousel {
-    // z-index: -1;
     position: relative;
     z-index: 1;
 
@@ -345,8 +344,10 @@ body {
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: #f9faff;
+
     .title {
         margin-bottom: 70px;
+
         p {
             max-width: 700px;
             margin: auto;
@@ -405,4 +406,99 @@ body {
 
 
 
-// Strat of section departments (fourth)
+// End of section departments (fourth)
+
+
+
+// Start of watch video 
+
+.watch-video {
+    background-color: hsl(223, 86%, 58%);
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .watch-video-title {
+        margin-bottom: 70px;
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            color: #ffffff;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 22px;
+            color: #ffffff;
+        }
+
+        hr {
+            width: 75px;
+            height: 3px;
+            background-color: #ffffff;
+            margin-bottom: 22px;
+        }
+    }
+
+    .watch-video-content {
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://templates.envytheme.com/promedi/default/assets/img/video-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        max-width: 750px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: -330px;
+        justify-content: center;
+        align-items: center;
+
+
+        .play-btn {
+
+            a{
+                position: relative;
+                background-color: #ffffff;
+                display: inline-block;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                transition: .5s;
+                i{
+                    color: #396cf0;
+                    font-size: 50px;
+                    margin-top: 23px;
+                    margin-left: 10px;
+                    transition: .5s;
+                   
+                }
+            }
+            a:hover{
+                background-color: #396cf0;
+                i{
+                    color: #ffffff;
+                }
+            }
+        }
+
+    }
+}
+
+// End of watch video 
+
+
+
+
+
+// Start of countup 
+
+.countup {
+    padding-top: 330px;
+}
+
+// End of countup 
