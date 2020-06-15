@@ -461,7 +461,7 @@ body {
 
         .play-btn {
 
-            a{
+            a {
                 position: relative;
                 background-color: #ffffff;
                 display: inline-block;
@@ -469,18 +469,21 @@ body {
                 width: 100px;
                 border-radius: 50%;
                 transition: .5s;
-                i{
+
+                i {
                     color: #396cf0;
                     font-size: 50px;
                     margin-top: 23px;
                     margin-left: 10px;
                     transition: .5s;
-                   
+
                 }
             }
-            a:hover{
+
+            a:hover {
                 background-color: #396cf0;
-                i{
+
+                i {
                     color: #ffffff;
                 }
             }
@@ -500,16 +503,19 @@ body {
 .countup {
     padding-top: 330px;
     padding-bottom: 70px;
-    .counter{
+
+    .counter {
         font-weight: bold;
         font-size: 40px;
         margin: 20px 0 6px;
     }
-    i{
+
+    i {
         color: #396cf0;
         font-size: 45px;
     }
-    p{
+
+    p {
         font-size: 17px;
         color: #666666;
     }
@@ -520,11 +526,11 @@ body {
 
 // Start of doctor
 
-.doctors{
+.doctors {
     padding-top: 100px;
     padding-bottom: 70px;
     background-color: #f9faff;
-    
+
     .title {
         margin-bottom: 70px;
 
@@ -546,28 +552,161 @@ body {
             margin-bottom: 22px;
         }
     }
-    .item{
+
+    .item {
         transition: .4s;
-        padding: 30px 20px;
-        // border: 0px;
-        p{
-            margin: 0;
+
+        .content {
+            padding: 30px 20px;
+
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                transition: .4s;
+            }
+
+            span {
+                color: #396cf0;
+            }
+
         }
-        h3{
-            font-size: 20px;
-            margin-bottom: 15px;
-            transition: .4s;
+
+        .img {
+            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+            position: relative;
         }
-        span{
-            color: #396cf0;
+
+        .img-back {
+            position: absolute;
+            display: inline-block;
+            width: 350px;
+            height: 353px;
+            top: 1px;
+            z-index: -1;
+            background-color: #396cf0;
+            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
         }
+
+        .img-hover {
+            position: absolute;
+            display: inline-block;
+            width: 350px;
+            height: 0px;
+            top: 1px;
+            background-color: #396cf0;
+            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+            opacity: .9;
+            transition: all .6s ;
+
+            .social-links {
+                text-align: center;
+                padding: 0;
+                margin-top: 50%;
+                transform: translateY(-50%);
+
+                li {
+                    display: inline-block;
+                    margin-right: 3px;
+
+                    a {
+                        display: inline-block;
+                        text-align: center;
+                        height: 40px;
+                        width: 40px;
+                        background-color: white;
+                        // border: 1px solid white;
+                        border-radius: 100%;
+                        color: #396cf0;
+                        transition: .5s;
+
+                        i {
+                            margin-top: 12px;
+                        }
+
+                    }
+
+                    a:hover {
+                        background-color: #333333;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
     }
-    .item:hover{
+
+    .item:hover {
         transform: translateY(-10px);
         box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
         background-color: #ffffff;
-        h3{
+
+        .img-hover {
+            height: 350px;
+        }
+
+        h3 {
             color: #396cf0;
+        }
+    }
+
+    .owl-prev {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        border-radius: 50%;
+        z-index: 4;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-prev:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        z-index: 4;
+        border-radius: 50%;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-next:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
         }
     }
 }
