@@ -7,15 +7,15 @@ $(document).ready(function () {
 
 
 
-
+                                                  
     // Doctor slider ajax 
 // First doctor
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/2",
         success: function (response) {
-          console.log(response.image);
-            $('.item-1 h3').text(response.name);
+             $('.item-1 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);                                                           ///////////////////////////bunu duzelt bir eache sal
+            $('.item-1 h3').text(response.name); 
             $('.item-1 span').text(response.profession);
             $('.item-1 p').text(response.description);
 
@@ -31,6 +31,7 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/3",
         success: function (response) {
+            $('.item-2 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
            $('.item-2 h3').text(response.name);
            $('.item-2 span').text(response.profession);
            $('.item-2 p').text(response.description);
@@ -47,7 +48,7 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/4",
         success: function (response) {
-
+            $('.item-3 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
             $('.item-3 h3').text(response.name);
             $('.item-3 span').text(response.profession);
             $('.item-3 p').text(response.description);
@@ -63,6 +64,7 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/5",
         success: function (response) {
+            $('.item-4 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
             $('.item-4 h3').text(response.name);
             $('.item-4 span').text(response.profession);
             $('.item-4 p').text(response.description);
