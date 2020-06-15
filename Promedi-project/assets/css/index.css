@@ -474,5 +474,83 @@ body a {
 
 .countup {
   padding-top: 330px;
+  padding-bottom: 70px;
+}
+
+.countup .counter {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 20px 0 6px;
+}
+
+.countup i {
+  color: #396cf0;
+  font-size: 45px;
+}
+
+.countup p {
+  font-size: 17px;
+  color: #666666;
+}
+
+.doctors {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #f9faff;
+}
+
+.doctors .title {
+  margin-bottom: 70px;
+}
+
+.doctors .title p {
+  max-width: 700px;
+  margin: auto;
+  color: #333333;
+}
+
+.doctors .title h3 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.doctors .title hr {
+  width: 75px;
+  height: 3px;
+  background-color: #396cf0;
+  margin-bottom: 22px;
+}
+
+.doctors .item {
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 30px 20px;
+}
+
+.doctors .item p {
+  margin: 0;
+}
+
+.doctors .item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.doctors .item span {
+  color: #396cf0;
+}
+
+.doctors .item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background-color: #ffffff;
+}
+
+.doctors .item:hover h3 {
+  color: #396cf0;
 }
 /*# sourceMappingURL=index.css.map */

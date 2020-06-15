@@ -499,6 +499,77 @@ body {
 
 .countup {
     padding-top: 330px;
+    padding-bottom: 70px;
+    .counter{
+        font-weight: bold;
+        font-size: 40px;
+        margin: 20px 0 6px;
+    }
+    i{
+        color: #396cf0;
+        font-size: 45px;
+    }
+    p{
+        font-size: 17px;
+        color: #666666;
+    }
 }
 
 // End of countup 
+
+
+// Start of doctor
+
+.doctors{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f9faff;
+    
+    .title {
+        margin-bottom: 70px;
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            color: #333333;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 22px;
+        }
+
+        hr {
+            width: 75px;
+            height: 3px;
+            background-color: #396cf0;
+            margin-bottom: 22px;
+        }
+    }
+    .item{
+        transition: .4s;
+        padding: 30px 20px;
+        // border: 0px;
+        p{
+            margin: 0;
+        }
+        h3{
+            font-size: 20px;
+            margin-bottom: 15px;
+            transition: .4s;
+        }
+        span{
+            color: #396cf0;
+        }
+    }
+    .item:hover{
+        transform: translateY(-10px);
+        box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+        background-color: #ffffff;
+        h3{
+            color: #396cf0;
+        }
+    }
+}
+
+//End of doctor
