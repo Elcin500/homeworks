@@ -757,4 +757,129 @@ body a {
   background-color: #333333;
   border-color: #333333;
 }
+
+.patients-feedback {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #f9faff;
+}
+
+.patients-feedback .center {
+  border: 1px solid #396cf0;
+}
+
+.patients-feedback .title {
+  margin-bottom: 70px;
+}
+
+.patients-feedback .title p {
+  max-width: 700px;
+  margin: auto;
+  color: #333333;
+}
+
+.patients-feedback .title h3 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.patients-feedback .title hr {
+  width: 75px;
+  height: 3px;
+  background-color: #396cf0;
+  margin-bottom: 22px;
+}
+
+.patients-feedback .item {
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid #e3f6fd;
+  padding: 5px;
+}
+
+.patients-feedback .item .content {
+  background-color: #e3f6fd;
+  padding: 25px;
+}
+
+.patients-feedback .item .content p {
+  margin: 0;
+}
+
+.patients-feedback .item .content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.patients-feedback .item .content span {
+  color: #396cf0;
+}
+
+.patients-feedback .item:hover {
+  border: 1px solid #396cf0;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.patients-feedback .owl-prev {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: #eeeeee !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 50%;
+  z-index: 4;
+  -webkit-transition: .5s;
+  transition: .5s;
+  outline: none !important;
+}
+
+.patients-feedback .owl-prev i {
+  color: #396cf0;
+}
+
+.patients-feedback .owl-prev:hover {
+  background-color: #396cf0 !important;
+  border: 0px !important;
+}
+
+.patients-feedback .owl-prev:hover i {
+  color: #ffffff;
+}
+
+.patients-feedback .owl-next {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: #eeeeee !important;
+  border: 1px solid #eeeeee !important;
+  z-index: 4;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  outline: none !important;
+}
+
+.patients-feedback .owl-next i {
+  color: #396cf0;
+}
+
+.patients-feedback .owl-next:hover {
+  background-color: #396cf0 !important;
+  border: 0px !important;
+}
+
+.patients-feedback .owl-next:hover i {
+  color: #ffffff;
+}
 /*# sourceMappingURL=index.css.map */

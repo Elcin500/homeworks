@@ -798,3 +798,128 @@ body {
 
 
 // End of appointment 
+
+
+
+//Start of patients
+
+.patients-feedback {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f9faff;
+
+
+    .center{
+        border: 1px solid #396cf0;
+    }
+    .title {
+        margin-bottom: 70px;
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            color: #333333;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 22px;
+        }
+
+        hr {
+            width: 75px;
+            height: 3px;
+            background-color: #396cf0;
+            margin-bottom: 22px;
+        }
+    }
+
+    .item {
+        transition: .4s;
+        border: 1px solid #e3f6fd;
+        padding: 5px;
+
+        .content {
+        background-color: #e3f6fd;
+        padding: 25px;
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                transition: .4s;
+            }
+
+            span {
+                color: #396cf0;
+            }
+
+        }   
+
+    }
+
+    .item:hover {
+        border: 1px solid #396cf0;
+        box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+    }
+
+    .owl-prev {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        border-radius: 50%;
+        z-index: 4;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-prev:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        z-index: 4;
+        border-radius: 50%;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-next:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
+        }
+    }
+}
+
+// End of patients

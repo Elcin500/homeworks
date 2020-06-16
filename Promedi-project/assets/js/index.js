@@ -16,10 +16,10 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/2",
         success: function (response) {
-             $('.item-1 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);                                                           ///////////////////////////bunu duzelt bir eache sal
-            $('.item-1 h3').text(response.name); 
-            $('.item-1 span').text(response.profession);
-            $('.item-1 p').text(response.description);
+             $('.doctors .item-1 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);                                                           ///////////////////////////bunu duzelt bir eache sal
+            $('.doctors .item-1 h3').text(response.name); 
+            $('.doctors .item-1 span').text(response.profession);
+            $('.doctors .item-1 p').text(response.description);
 
         },
         error: function (response) {
@@ -33,10 +33,10 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/3",
         success: function (response) {
-            $('.item-2 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
-           $('.item-2 h3').text(response.name);
-           $('.item-2 span').text(response.profession);
-           $('.item-2 p').text(response.description);
+           $('.doctors .item-2 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
+           $('.doctors .item-2 h3').text(response.name);
+           $('.doctors .item-2 span').text(response.profession);
+           $('.doctors .item-2 p').text(response.description);
            
         },
         error: function (response) {
@@ -50,10 +50,10 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/4",
         success: function (response) {
-            $('.item-3 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
-            $('.item-3 h3').text(response.name);
-            $('.item-3 span').text(response.profession);
-            $('.item-3 p').text(response.description);
+            $('.doctors .item-3 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
+            $('.doctors .item-3 h3').text(response.name);
+            $('.doctors .item-3 span').text(response.profession);
+            $('.doctors .item-3 p').text(response.description);
         },
         error: function (response) {
             console.log('Error');
@@ -66,10 +66,10 @@ $(document).ready(function () {
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/5",
         success: function (response) {
-            $('.item-4 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
-            $('.item-4 h3').text(response.name);
-            $('.item-4 span').text(response.profession);
-            $('.item-4 p').text(response.description);
+            $('.doctors .item-4 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); 
+            $('.doctors .item-4 h3').text(response.name);
+            $('.doctors .item-4 span').text(response.profession);
+            $('.doctors .item-4 p').text(response.description);
         },
         error: function (response) {
             console.log('Error');
@@ -150,9 +150,9 @@ $('.doctor-carousel').owlCarousel({
     nav:true,   
     dots:false,
     margin:30,
-    // autoplay:true,
-    // autoplayTimeout:3000,
-    // autoplayHoverPause:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
@@ -165,7 +165,7 @@ $('.doctor-carousel').owlCarousel({
         }
     },
     navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
-})
+});
 
 
 // A[pointment submit
@@ -199,6 +199,36 @@ $('.btn-submit').click(function (e) {
 
 
 });
+
+
+$('.patients-carousel').owlCarousel({
+    loop:true,
+    nav:true,   
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600 :{
+           items:2
+        },
+        1000:{
+            items:3
+        }
+    },
+    navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
+});
+
+setInterval(function(){
+    
+    let center=$('.patients-carousel .active')[1];
+    $(center).addClass('center');
+    console.log(center)
+    }, 1500);
+
 
 });
 
