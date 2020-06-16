@@ -600,7 +600,7 @@ body {
             background-color: #396cf0;
             clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
             opacity: .9;
-            transition: all .6s ;
+            transition: all .6s;
 
             .social-links {
                 text-align: center;
@@ -712,3 +712,78 @@ body {
 }
 
 //End of doctor
+
+
+
+// Start of appointment 
+
+
+
+.appointment {
+    .container-fluid {
+
+        padding: 0 !important;
+
+        .card-col-left {
+            .img {
+                height: 645px;
+                background-image: url('https://templates.envytheme.com/promedi/default/assets/img/appointment-left-bg.jpg');
+                background-position: center center;
+                position: relative;
+
+                h3 {
+                    position: absolute;
+                    text-align: right;
+                    right: 0;
+                    bottom: 100px;
+                    background: rgba(47, 64, 112, 0.9);
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 35px;
+                    padding: 25px 20px;
+                }
+            }
+        }
+
+        .card-col-right {
+            background-color: #396cf0;
+
+
+            form {
+                max-width: 670px;
+                padding-top: 90px;
+                padding-bottom: 100px;
+                padding-left: 50px;
+
+                .form-control{
+                    height: 45px;
+                    border-color: #ffffff;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                }
+                h3 {
+                    font-size: 42px;
+                    color: #ffffff;
+                    margin-bottom: 30px;
+                    font-weight: bold;
+                }
+
+                button {
+                    color: #396cf0;
+                    font-weight: bold;
+                    transition: all .4s;
+                }
+
+                button:hover {
+                    color: #ffffff;
+                    background-color: #333333;
+                    border-color: #333333;
+                }
+            }
+
+        }
+    }
+}
+
+
+// End of appointment 
