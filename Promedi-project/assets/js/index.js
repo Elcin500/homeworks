@@ -227,7 +227,7 @@ setInterval(function(){
     let center=$('.patients-carousel .active')[1];
     $(center).addClass('center');
     console.log(center)
-    }, 1500);
+    }, 1000);
 
 
 });
