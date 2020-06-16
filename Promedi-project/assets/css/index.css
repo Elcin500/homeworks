@@ -728,6 +728,16 @@ body a {
   border-radius: 5px;
 }
 
+.appointment .container-fluid .card-col-right form .valid-feedback {
+  font-size: 1rem;
+  color: black;
+}
+
+.appointment .container-fluid .card-col-right form .invalid-feedback {
+  font-size: 1rem;
+  color: yellow;
+}
+
 .appointment .container-fluid .card-col-right form h3 {
   font-size: 42px;
   color: #ffffff;

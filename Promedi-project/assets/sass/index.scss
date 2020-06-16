@@ -747,7 +747,7 @@ body {
 
         .card-col-right {
             background-color: #396cf0;
-
+            
 
             form {
                 max-width: 670px;
@@ -755,12 +755,23 @@ body {
                 padding-bottom: 100px;
                 padding-left: 50px;
 
-                .form-control{
+                .form-control {
                     height: 45px;
                     border-color: #ffffff;
                     padding: 8px 15px;
                     border-radius: 5px;
                 }
+
+                .valid-feedback {
+                    font-size: 1rem;
+                    color: black;
+                }
+
+                .invalid-feedback {
+                    font-size: 1rem;
+                    color:yellow ;
+                }
+
                 h3 {
                     font-size: 42px;
                     color: #ffffff;

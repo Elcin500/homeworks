@@ -7,6 +7,8 @@ $(document).ready(function () {
 
 
 
+
+
                                                   
     // Doctor slider ajax 
 // First doctor
@@ -164,6 +166,39 @@ $('.doctor-carousel').owlCarousel({
     },
     navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
 })
+
+
+// A[pointment submit
+
+$('.btn-submit').click(function (e) { 
+    e.preventDefault();
+    let inputs=$('.form-control')
+    $.each(inputs, function (index, element) { 
+        if($(element).val()=='')
+        {
+            if($(element).hasClass('is-valid'))
+           {
+            $(element).removeClass('is-valid');
+
+           }
+            $(element).addClass('is-invalid');
+         console.log('dem');
+
+        }
+        else{
+           if($(element).hasClass('is-invalid'))
+           {
+            $(element).removeClass('is-invalid');
+
+           }
+            $(element).addClass('is-valid');
+
+        }
+
+    });
+
+
+});
 
 });
 
