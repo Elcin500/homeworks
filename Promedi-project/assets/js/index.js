@@ -205,6 +205,7 @@ $('.patients-carousel').owlCarousel({
     loop:true,
     nav:true,   
     dots:false,
+    margin:30,
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
@@ -222,12 +223,45 @@ $('.patients-carousel').owlCarousel({
     navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
 });
 
+
+
 setInterval(function(){
-    
     let center=$('.patients-carousel .active')[1];
     $(center).addClass('center');
-    console.log(center)
+    // console.log(center);
+
+   
     }, 1000);
+
+
+
+    // News carousel
+$('.news-carousel').owlCarousel({
+    loop:true,
+    nav:true,   
+    dots:false,
+    margin:30,
+    // autoplay:true,
+    // autoplayTimeout:3000,
+    // autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600 :{
+           items:2
+        },
+        1000:{
+            items:3
+        }
+    },
+    navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
+});
+
+
+
+
+
 
 
 });
@@ -302,3 +336,42 @@ $('.call-action').hover(function () {
     $('.call-action-text i').css('color', '#ffffff');
 }
 );
+
+
+
+
+$('.form form button').click(function (e) { 
+    e.preventDefault();
+    
+    let patt=/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+     
+    let value=$('.form form input').val();
+
+     if(value=='' || !value.match(patt))
+     {
+         if($('.form form input').hasClass('is-valid'))
+         {
+        $('.form form input').removeClass('is-valid');
+           
+         }
+        $('.form form input').addClass('is-invalid');
+        $('.form form input').addClass('invalid-form');
+        setTimeout(function() {
+        $('.form form input').removeClass('invalid-form');
+        }, 1000);
+     }
+     else{
+        if($('.form form input').hasClass('is-invalid'))
+        {
+       $('.form form input').removeClass('is-invalid');
+          
+        }
+
+        $('.form form input').addClass('is-valid');
+
+     }
+
+
+
+
+});

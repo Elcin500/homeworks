@@ -747,7 +747,7 @@ body {
 
         .card-col-right {
             background-color: #396cf0;
-            
+
 
             form {
                 max-width: 670px;
@@ -769,7 +769,7 @@ body {
 
                 .invalid-feedback {
                     font-size: 1rem;
-                    color:yellow ;
+                    color: yellow;
                 }
 
                 h3 {
@@ -806,12 +806,13 @@ body {
 .patients-feedback {
     padding-top: 100px;
     padding-bottom: 70px;
-    background-color: #f9faff;
 
 
-    .center{
+
+    .center {
         border: 1px solid #396cf0;
     }
+
     .title {
         margin-bottom: 70px;
 
@@ -840,10 +841,12 @@ body {
         padding: 5px;
 
         .content {
-        background-color: #e3f6fd;
-        padding: 25px;
+            background-color: #e3f6fd;
+            padding: 25px;
+
             p {
                 margin: 0;
+
             }
 
             h3 {
@@ -856,7 +859,22 @@ body {
                 color: #396cf0;
             }
 
-        }   
+            i {
+                color: #396cf0;
+                font-size: 50px;
+
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+                border: 2px solid #396cf0;
+                border-radius: 50%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
 
     }
 
@@ -923,3 +941,395 @@ body {
 }
 
 // End of patients
+
+
+
+
+// Start of cta-area 
+
+.cta-area {
+    background-color: #f9faff;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+
+        h3 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 42px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 15px 0 0px;
+        }
+
+        .contact {
+            font-size: 35px;
+            font-weight: bold;
+            color: #396cf0;
+            margin-top: 25px;
+        }
+    }
+
+    .img {
+        position: absolute;
+        bottom: 0;
+
+        img {
+            max-width: 210px;
+        }
+    }
+
+}
+
+
+
+// End of cta-area 
+
+
+
+// Start of news 
+
+.news {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f9faff;
+
+    .title {
+        margin-bottom: 70px;
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            color: #333333;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 22px;
+        }
+
+        hr {
+            width: 75px;
+            height: 3px;
+            background-color: #396cf0;
+            margin-bottom: 22px;
+        }
+    }
+
+    .item {
+        transition: .4s;
+
+        .content {
+            padding: 30px 20px;
+
+
+            p {
+                margin: 0;
+                color: #666666;
+            }
+
+            h3 {
+                margin-top: -5px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                font-size: 20px;
+
+                a {
+                    color: #212529;
+                    line-height: 28px;
+                    outline: none;
+                    text-decoration: none;
+                    transition: .4s;
+
+                }
+
+                a:hover {
+                    color: #396cf0;
+                }
+            }
+
+            ul {
+                margin: 20px 0;
+                padding: 0;
+
+                li.photo {
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+                    color: #666666;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            a.read {
+                color: #396cf0;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 20px;
+                display: inline-block;
+                line-height: 16px;
+                text-decoration: none;
+
+                i {
+                    font-size: 12px;
+                    margin-left: 1px;
+                    transition: .4s;
+                }
+            }
+
+            a.read:hover {
+                i {
+                    margin-left: 6px;
+                }
+            }
+
+
+        }
+
+        .img {
+            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+            position: relative;
+        }
+
+        .img-back {
+            position: absolute;
+            display: inline-block;
+            width: 350px;
+            height: 283px;
+            top: 1px;
+            z-index: -1;
+            background-color: #396cf0;
+            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+        }
+
+
+
+
+    }
+
+    .item:hover {
+        transform: translateY(-10px);
+        box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+        background-color: #ffffff;
+
+        .img-hover {
+            height: 350px;
+        }
+
+        h3 {
+            color: #396cf0;
+        }
+    }
+
+    .owl-prev {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        border-radius: 50%;
+        z-index: 4;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-prev:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        background-color: #eeeeee !important;
+        border: 1px solid #eeeeee !important;
+        z-index: 4;
+        border-radius: 50%;
+        transition: .5s;
+        outline: none !important;
+
+        i {
+            color: #396cf0;
+        }
+    }
+
+    .owl-next:hover {
+        background-color: #396cf0 !important;
+        border: 0px !important;
+
+        i {
+            color: #ffffff;
+        }
+    }
+}
+
+
+//End of news
+
+
+// Start of letter last section
+
+.letter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('https://templates.envytheme.com/promedi/default/assets/img/newsletter-bg.jpg');
+    position: relative;
+    clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
+
+    .title {
+        margin-bottom: 70px;
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            color: #ffffff;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 22px;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+
+        hr {
+            width: 75px;
+            height: 3px;
+            background-color: #ffffff;
+            margin-bottom: 22px;
+        }
+    }
+
+    .form {
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        form {
+            input {
+                position: relative;
+                outline: none;
+                width: 100%;
+                border: none;
+                border-radius: 30px;
+                padding: 5px 25px;
+                height: 50px;
+                padding-right: 68px;
+            }
+
+            .invalid-feedback,
+            .valid-feedback {
+                color: #ffffff;
+                font-size: 20px;
+            }
+
+            .invalid-form {
+                animation-name: invalid;
+                animation-duration: .4s;
+                // transition: 1s;
+            }
+
+            @keyframes invalid {
+                0% {
+                    margin-left: 25px;
+                }
+
+                25% {
+                    margin-left: -25px;
+                }
+
+                50% {
+                    margin-left: 25px;
+                }
+
+                75% {
+                    margin-left: -25px;
+                }
+
+                100% {
+                    margin-left: 0;
+                }
+            }
+
+
+            button {
+                position: absolute;
+                font-size: 30px;
+                padding: 5px 25px;
+                right: 0;
+                top: 0;
+                height: 50px;
+                color: #396cf0;
+                opacity: .65;
+                transform: rotate(40deg);
+                outline: none;
+                border: 0;
+            }
+            button:focus {
+                display: none;
+            }
+
+            button:hover {
+                color: #333333;
+            }
+
+        }
+    }
+
+}
+
+.letter::before {
+    content: '';
+
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
+    background-color: #396cf0;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+// End of letter last section
