@@ -403,3 +403,62 @@ $.each(allBoxes, function (index, element) {
 });
 
 // end of welcome hover
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ //////////////////////////                pages-our-doctor js         /////////////////////////////////
+
+
+
+
+                
+    //  Our Doctor slider ajax 
+    $.ajax({
+        type: "GET",
+        url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors",
+        success: function (response) {
+            $.each(response, function (responseIndex, responseEach) {
+
+                let col=$('<div/>',{
+                    class: 'col-lg-4',
+                    html: `
+                    <div class="item">
+                    <div class="img">
+                        <img src="http://kamranaeff1994-002-site3.ctempurl.com/images/${responseEach.image}" alt="">
+                    </div>
+                    <div class="img-back"></div>
+                    <div class="img-hover">
+                        <ul class="social-links">
+                            <li><a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="content text-center">
+                        <h3>${responseEach.name}</h3>
+                        <span>${responseEach.profession}</span>
+                        <p>${responseEach.description}</p>
+                    </div>
+                </div>
+                `
+            
+                
+               
+                });
+            $('.our-doctors .row').append(col);
+
+            });
+
+        },
+        error: function (response) {
+            console.log('Error');
+
+        }
+    });
+
