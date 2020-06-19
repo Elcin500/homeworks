@@ -8,6 +8,7 @@
   -webkit-transition: .4s;
   transition: .4s;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .our-doctors .item .content {

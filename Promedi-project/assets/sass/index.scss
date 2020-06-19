@@ -49,50 +49,6 @@ body {
 
 
 
-//  Bu code diger htmller ucundur
-// Start of background
-.background {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(https://templates.envytheme.com/promedi/default/assets/img/slider/1.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 245px;
-    padding-bottom: 60px;
-
-    .col-md-6 {
-        h3 {
-            color: #ffffff;
-            font-size: 35px;
-            margin-bottom: 0;
-            font-weight: bold;
-        }
-    }
-
-    .col-md-6:last-child {
-        text-align: right;
-
-        ul {
-            margin: 0;
-            padding: 0;
-
-            li {
-                display: inline-block;
-                color: #ffffff;
-                font-size: 18px;
-                padding-left: 20px;
-            }
-
-            li:first-child {
-                padding-left: 0;
-            }
-        }
-    }
-}
-
-// End of background
-
-
 
 
 
