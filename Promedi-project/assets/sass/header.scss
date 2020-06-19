@@ -4,6 +4,7 @@
     top: 0;
     width: 100%;
     z-index: 999;
+
     // background-color: black;
     .header-top {
         padding: 20px 0px;
@@ -63,15 +64,16 @@
         }
     }
 
-    .scroll{
+    .scroll {
         max-width: 1110px;
         margin-left: auto;
         margin-right: auto;
-        
+
     }
-    
+
     .header-bottom {
         box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+
         nav {
             background-color: white;
             padding: 20px 15px;
@@ -116,6 +118,7 @@
                             position: absolute;
                             width: 200px;
                             transition: all 1s;
+
                             a {
                                 text-decoration: none;
                                 color: black;
@@ -146,8 +149,9 @@
                             opacity: 0;
                             height: 0;
                             overflow: hidden;
-                            
+
                         }
+                        
                     }
 
                 }
@@ -176,4 +180,6 @@
 
         }
     }
+
+  
 }
