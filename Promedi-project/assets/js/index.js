@@ -15,6 +15,9 @@ $(document).ready(function () {
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/2",
+        beforeSend:function(){
+            $('.loader').addClass('show').fadeIn(1000);
+        },
         success: function (response) {
             $('.doctors .item-1 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`); ///////////////////////////bunu duzelt bir eache sal
             $('.doctors .item-1 h3').text(response.name);
@@ -26,12 +29,23 @@ $(document).ready(function () {
             console.log('Error');
 
         }
-    });
+    })
+    .done(function(){
+        // console.log('done')
+        $('.loader').fadeOut(1000,function(){
+            $('.loader').removeClass('show')
+
+        })
+
+    })
 
     // Second doctor
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/3",
+        beforeSend:function(){
+            $('.loader').addClass('show').fadeIn(1000);
+        },
         success: function (response) {
             $('.doctors .item-2 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);
             $('.doctors .item-2 h3').text(response.name);
@@ -43,12 +57,23 @@ $(document).ready(function () {
             console.log('Error');
 
         }
-    });
+    })
+    .done(function(){
+        // console.log('done')
+        $('.loader').fadeOut(1000,function(){
+            $('.loader').removeClass('show')
+
+        })
+
+    })
 
     // Third doctor
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/4",
+        beforeSend:function(){
+            $('.loader').addClass('show').fadeIn(1000);
+        },
         success: function (response) {
             $('.doctors .item-3 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);
             $('.doctors .item-3 h3').text(response.name);
@@ -59,12 +84,23 @@ $(document).ready(function () {
             console.log('Error');
 
         }
-    });
+    })
+    .done(function(){
+        // console.log('done')
+        $('.loader').fadeOut(1000,function(){
+            $('.loader').removeClass('show')
+
+        })
+
+    })
 
     // Fifth doctor
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors/5",
+        beforeSend:function(){
+            $('.loader').addClass('show').fadeIn(1000);
+        },
         success: function (response) {
             $('.doctors .item-4 img').attr('src', `http://kamranaeff1994-002-site3.ctempurl.com/images/${response.image}`);
             $('.doctors .item-4 h3').text(response.name);
@@ -75,7 +111,15 @@ $(document).ready(function () {
             console.log('Error');
 
         }
-    });
+    })
+    .done(function(){
+        // console.log('done')
+        $('.loader').fadeOut(1000,function(){
+            $('.loader').removeClass('show')
+
+        })
+
+    })
 
 
 
@@ -257,6 +301,7 @@ $(document).ready(function () {
 });
 
 
+
 //Header functions
 function header() {
     let lis = $('.ul li');
@@ -416,6 +461,9 @@ $.each(allBoxes, function (index, element) {
     $.ajax({
         type: "GET",
         url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors",
+        beforeSend:function(){
+            $('.loader').addClass('show').fadeIn(1000);
+        },
         success: function (response) {
             $.each(response, function (responseIndex, responseEach) {
 
@@ -460,5 +508,13 @@ $.each(allBoxes, function (index, element) {
             console.log('Error');
 
         }
-    });
+    })
+    .done(function(){
+        // console.log('done')
+        $('.loader').fadeOut(1000,function(){
+            $('.loader').removeClass('show')
+
+        })
+
+    })
 
