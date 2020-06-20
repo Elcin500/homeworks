@@ -1,0 +1,32 @@
+.main{
+    background-color: #f7fbf1;
+    width:650px;
+    margin-left: 30% ;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+.main>h4{
+    padding-left: 30px;
+    display: inline-block;
+    /* color: greenyellow; */
+}
+.up{
+    padding: 10px;
+    text-align: center;
+}
+.main>.col>span{
+    display: inline-block;
+   margin-left: 300px;
+}
+.main>.col>h4{
+    display: inline-block;
+    
+}
+
+.main>.col>a{
+    text-align: end;
+  margin-left: 600px;
+}
+
+

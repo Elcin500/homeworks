@@ -1,0 +1,358 @@
+.center {
+    height: 400px;
+}
+
+
+.f {
+    margin-top: 20px;
+    position: relative;
+    left: 272px;
+}
+
+.a {
+
+    /* background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); */
+    border: 1px;
+    border-radius: 20px;
+    padding: 0px;
+    width: 253px;
+    left: 22px;
+    top: 29px;
+    height: 464px;
+    position: absolute;
+    bottom: 32px;
+}
+
+.f>img {
+    height: 520px;
+    width: 270px;
+}
+
+.nav1 {
+    display: block !important;
+    border: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    left: 0;
+    width: 254px;
+    height: 65px;
+    background-color: #25d366;
+}
+
+.nav1>i {
+    color: white;
+    font-size: 11px;
+    margin-left: 6px !important;
+}
+
+.nav1>a {
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+.nav1>a>i {
+    color: white;
+    font-size: 11px;
+    margin-left: 6px !important;
+}
+
+.nav1>.video1 {
+    margin-left: 80px !important;
+}
+
+.nav1>p {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+
+}
+
+
+.upon {
+    width: 253px;
+    overflow: hidden;
+
+}
+
+.in {
+    width: 759px;
+    display: flex;
+    position: relative;
+}
+
+.firstDiv {
+    width: 253px;
+}
+
+.secondDiv {
+    width: 253px;
+
+}
+
+.thirdDiv {
+    width: 253px;
+
+}
+
+.chat {
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: unset;
+    /* bu overflowa gore mesaj tam dusmur  */
+    height: 401px;
+    margin-bottom: 0;
+    width: 253px;
+}
+
+.chat>li {
+    height: 50px;
+
+}
+
+.a-tag {
+    height: 50px;
+    width: 253px;
+    text-align: unset !important;
+    padding: 0px !important;
+}
+
+.chat>li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.chat>li img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.chat>li h6 {
+    display: inline-block;
+
+}
+
+.chat>hr {
+    margin: 0px 2px;
+}
+
+.chat small {
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+}
+
+
+
+
+.ul {
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: unset;
+    /* bu overflowa gore mesaj tam dusmur  */
+    height: 401px;
+    margin-bottom: 0;
+    width: 253px;
+}
+
+.ul>li {
+    height: 50px;
+    position: relative;
+
+}
+
+.ul>li>i {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.ul>li>img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.ul>li>p {
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    top: 27px;
+    left: 52px;
+
+}
+
+.ul>li>h6 {
+    display: inline-block;
+
+}
+
+ul>hr {
+    margin: 0px 2px;
+}
+
+.contacts {
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: unset;
+    /* bu overflowa gore mesaj tam dusmur  */
+    height: 401px;
+    margin-bottom: 0;
+    width: 253px;
+}
+
+
+
+.contacts>li {
+    height: 50px;
+    position: relative;
+}
+
+
+
+.a-tag3 {
+    color: black;
+    text-decoration: none;
+    height: 50px;
+    width: 253px;
+    text-align: unset !important;
+    padding: 0px !important;
+}
+
+
+.contacts>li i {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.contacts>li img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.contacts>li p {
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    top: 27px;
+    left: 52px;
+
+}
+
+.contacts>li h6 {
+    display: inline-block;
+
+}
+
+.contacts>hr {
+    margin: 0px 2px;
+}
+
+
+.bottom {
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.bottom>a {
+    padding: 0px !important;
+}
+
+.bottom .active {
+    border-bottom: 3px solid white;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+
+.bottom .active>p {
+    color: white;
+}
+
+.bottom>a>p {
+    color: #028830;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*                                ///////////////////       Contactin cssi          /////////////////        ///////////////////  */
+.secondCol {
+    right: 240px;
+    display: none;
+}
+
+.secondCol .cardBody {
+    height: 540px;
+}
+
+.cardBody input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+.inputName {
+    outline: none;
+
+}
+
+.btnAddMan {
+    margin-left: 70%;
+}
+
+
+/* ///////////////////////////                   Change Contactin cssi                 //////////////////////////////// */
+.allContacts {
+    display: none;
+}
+
+.allContacts .card-body {
+    height: 400px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.allContacts .btn-change {
+    margin-left: 270px;
+}
+
+.allContacts .card-body p {
+    display: none;
+}
+
+
+.coloflast {
+    margin-left: 235px;
+}
+
+.allContacts input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+/*     //////////                   Burdan asag                     /////////////////                          */

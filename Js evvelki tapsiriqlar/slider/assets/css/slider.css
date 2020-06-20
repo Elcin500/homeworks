@@ -1,0 +1,115 @@
+body{
+    height: 2000px;
+}
+
+
+.link {
+    display: inline-block;
+    overflow: hidden;
+    width: 130px;
+    height: 80px;
+}
+
+.link>a {
+    display: inline-block;
+    width: 130px;
+    height: 80px;
+    padding: 0;
+}
+
+.link>a>img {
+    width: 130px;
+    height: 80px;
+}
+
+.link a:hover {
+    transform: scale(1.2, 1.2);
+    transition: .3s;
+}
+
+.coldiv{
+    padding: 0;
+}
+
+.slide-containre {
+    width: 1140px;
+    height: 530px;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+
+.slide>img {
+    width: 1140px;
+    height: 530px;
+}
+
+.slide {
+    display: flex;
+    width: 4560px;
+    flex-flow: row nowrap;
+    position: relative;
+    /* height: 250x; */
+    transition: .2s;
+
+    margin: 0;
+    padding: 0;
+}
+
+.next {
+    display: inline-block;
+    /* width: 50px; */
+    font-size: 20px;
+    position: absolute;
+    top: 220px;
+    right: 25px;
+}
+
+.prev>i {
+    color: white;
+}
+.prev {
+    display: inline-block;
+    /* width: 50px; */
+    font-size: 20px;
+    position: absolute;
+    top: 220px;
+    /* right: 140px; */
+    left: 25px;
+}
+.next>i{
+    color: white;
+}
+
+/* .ab{
+    display: inline-block;
+    width: 200px;
+} */
+
+.main{
+    margin-top: 70px;
+
+}
+
+.nav{
+    /* position: fixed; */
+    /* z-index: 1; */
+    background-color: #003542;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav>span{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.second-container .col-4{
+
+    background-color: red;
+    margin: 5px;
+
+}

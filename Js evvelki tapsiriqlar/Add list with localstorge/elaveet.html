@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<style>
+    li {
+        border-top: 1px solid grey;
+        width: 200px;
+        padding: 2px;
+
+    }
+
+    button {
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 2px;
+        width: 150px;
+        background-color: #730000;
+        border: 1px solid gray;
+        color: white;
+    }
+    input{
+        height: 26px;
+      
+    }
+    select{
+        height: 30px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+
+    
+    }
+</style>
+
+<body>
+
+    <input type="text" placeholder="Adinizi daxil edin" id="name">
+    <input type="text" placeholder="Soyadinizi daxil edin" id="surname">
+    <br>
+    <select id="gender">
+
+        <option value="kisi">Kişi</option>
+        <option value="qadin">Qadın</option>
+
+        <option disabled selected>--Cins--</option>
+    </select>
+    <br>
+    <button id=add>Add</button>
+    <br>
+    <button id="selectMales">Select Males</button>
+    <br>
+    <button id="selectFemales">Select Females</button>
+    <br>
+    <button id="clearSelection">Add All </button>
+
+    <ol id="list">
+
+    </ol>
+
+    <script src="js/elaveet.js"></script>
+</body>
+
+</html>
