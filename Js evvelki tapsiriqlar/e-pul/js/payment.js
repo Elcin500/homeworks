@@ -77,8 +77,6 @@ if(form.children[0]!=number1){
 //     alert('Kart nomresi dzgun deil');
 //     return;
 //    }
-///////// Burda qalmisam yazammmadim cunki payment.cardNo.lenght- undufined verir///////////////////////////////////////
-
 
 
 
