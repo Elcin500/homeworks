@@ -218,7 +218,6 @@ $(document).ready(function () {
 
                 }
                 $(element).addClass('is-invalid');
-                console.log('dem');
 
             } else {
                 if ($(element).hasClass('is-invalid')) {
@@ -339,7 +338,7 @@ function footer() {
 }
 
 
-// Call ac tion aid kid hover
+// Call action aid kid hover
 $('.call-action').hover(function () {
     // over
     $('.call-action-text i').css({
@@ -371,6 +370,7 @@ $('.call-action').hover(function () {
 
 
 
+//last section form
 
 $('.form form button').click(function (e) {
     e.preventDefault();
@@ -517,4 +517,51 @@ $.each(allBoxes, function (index, element) {
         })
 
     })
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////                   Contact js             ////////////////////////
+
+
+
+$('.btn-submit-contact').click(function (e) {
+    e.preventDefault();
+    let inputs = $('.form-control')
+    $.each(inputs, function (index, element) {
+        if ($(element).val() == '') {
+            if ($(element).hasClass('is-valid')) {
+                $(element).removeClass('is-valid');
+
+            }
+            $(element).addClass('is-invalid');
+            $('.form-div').addClass('form-div-animated');
+
+            setTimeout(function () {
+                $('.form-div').removeClass('form-div-animated');
+            }, 1000);
+                } 
+                else {
+            if ($(element).hasClass('is-invalid')) {
+                $(element).removeClass('is-invalid');
+
+            }
+            $(element).addClass('is-valid');
+
+        }
+
+    });
+
+
+});
+
+
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
 

@@ -443,4 +443,187 @@
   background-color: #396cf0;
   color: #ffffff;
 }
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact .contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact .contact-info ul {
+  padding: 0;
+}
+
+.contact .contact-info ul li {
+  margin-bottom: 8px;
+  color: #666666;
+  list-style-type: none;
+}
+
+.contact .contact-info ul li i {
+  margin-right: 6px;
+  color: #396cf0;
+}
+
+.contact .opening-hours h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact .opening-hours ul {
+  padding: 0;
+}
+
+.contact .opening-hours ul li {
+  list-style-type: none;
+  color: #666666;
+}
+
+.contact .opening-hours ul li span {
+  float: right;
+}
+
+.contact .contact-form h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact .contact-form p {
+  text-transform: uppercase;
+  color: #396cf0;
+}
+
+.contact .contact-form .form-div {
+  position: relative;
+}
+
+.contact .contact-form .form-div form input {
+  border: 1px solid #eeeeee;
+}
+
+.contact .contact-form .form-div form textarea {
+  border: 1px solid #eeeeee;
+}
+
+.contact .contact-form .form-div-animated {
+  -webkit-animation-name: is-invalid;
+          animation-name: is-invalid;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  left: 0;
+}
+
+@-webkit-keyframes is-invalid {
+  0% {
+    left: 15px;
+  }
+  15% {
+    left: -15px;
+  }
+  30% {
+    left: 15px;
+  }
+  45% {
+    left: -15px;
+  }
+  60% {
+    left: 15px;
+  }
+  75% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes is-invalid {
+  0% {
+    left: 15px;
+  }
+  15% {
+    left: -15px;
+  }
+  30% {
+    left: 15px;
+  }
+  45% {
+    left: -15px;
+  }
+  60% {
+    left: 15px;
+  }
+  75% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.department-details {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.department-details .details-left .img img {
+  max-width: 100%;
+}
+
+.department-details .details-left h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.department-details .details-left .department-content {
+  margin-top: 30px;
+}
+
+.department-details .details-left .department-content p {
+  color: #666666;
+}
+
+.department-details .details-left .department-share {
+  margin-top: 25px;
+}
+
+.department-details .details-left .department-share ul {
+  padding: 0;
+}
+
+.department-details .details-left .department-share ul li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.department-details .details-right div {
+  margin-bottom: 30px;
+}
+
+.department-details .details-right div h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.department-details .details-right div ul {
+  padding: 0;
+}
+
+.department-details .details-right div ul li {
+  list-style-type: none;
+  color: #666666;
+}
+
+.department-details .details-right div ul li span {
+  float: right;
+}
 /*# sourceMappingURL=otherPages.css.map */
